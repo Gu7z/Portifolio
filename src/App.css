@@ -6,8 +6,12 @@ html {
 
 .portifolio {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .sections {
-  width: 100%;
+  min-width: 400px;
+  width: 700px;
 }
