@@ -3,9 +3,11 @@
   color: #ffffff;
   border-radius: 25px;
   width: 216px;
+  height: 480px;
   padding: 16px 32px;
-  opacity: 0.9;
   position: relative;
+  margin-top: 80px;
+  margin-left: 16px;
 }
 
 .sticky_bar h1 {
@@ -66,4 +68,10 @@
 .sticky_bar li:hover {
   margin-left: 8px;
   transition: margin 0.2s;
+}
+
+.sticky_bottom {
+  position: absolute;
+  bottom: 32px;
+  opacity: 0.8;
 }

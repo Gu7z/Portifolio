@@ -57,6 +57,8 @@ const StickyBar: React.FC = () => {
           </li>
         ))}
       </ul>
+
+      <div className="sticky_bottom">@2022 Gustavo Ferri</div>
     </div>
   );
 };
