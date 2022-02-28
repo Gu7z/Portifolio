@@ -10,6 +10,10 @@
   position: sticky;
   top: 30px;
   margin-right: 16px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .sticky_bar img {
@@ -55,10 +59,6 @@
   align-items: center;
   height: 40px;
   transition: margin 0.2s;
-
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 .li_icons {
