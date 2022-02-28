@@ -23,7 +23,9 @@ const LI_CONTENT = [
 ];
 
 const StickyBar: React.FC = () => {
-  const [selected, setSelected] = useState<string | undefined>(undefined);
+  const [selected, setSelected] = useState<string | undefined>(
+    LI_CONTENT[0].title
+  );
 
   const markerClassName = (title: string) =>
     selected === title ? "marker" : "";
