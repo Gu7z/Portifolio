@@ -1,18 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useState } from "react";
-import {
-  BiHome,
-  BiUser,
-  BiLibrary,
-  BiPhone,
-  BiBookContent,
-} from "react-icons/bi";
+import { BiUser, BiLibrary, BiPhone, BiBookContent } from "react-icons/bi";
 import "./style.css";
 
 const LI_CONTENT = [
-  {
-    icon: <BiHome />,
-    title: "Home",
-  },
   {
     icon: <BiUser />,
     title: "About",
@@ -35,7 +26,12 @@ const StickyBar: React.FC = () => {
   const [selected, setSelected] = useState<string | undefined>(undefined);
 
   const markerClassName = (title: string) =>
-    selected === title ? "marker" : undefined;
+    selected === title ? "marker" : "";
+
+  const selectOptions = (title: string) => {
+    setSelected(title);
+    document.getElementById(title)?.scrollIntoView();
+  };
 
   return (
     <div className="sticky_bar">
@@ -50,7 +46,7 @@ const StickyBar: React.FC = () => {
       </div>
       <ul>
         {LI_CONTENT.map((each) => (
-          <li key={each.title} onClick={() => setSelected(each.title)}>
+          <li key={each.title} onClick={() => selectOptions(each.title)}>
             <div className={markerClassName(each.title)} />
             <div className="li_icons">{each.icon}</div>
             <h3>{each.title}</h3>
