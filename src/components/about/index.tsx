@@ -29,22 +29,22 @@ const About: React.FC = () => {
           <div className="sensitive_information">
             <div className="data_col_1">
               <div className="data up">
-                <p>Nome: &nbsp;</p>
-                <p className="color_grey">Gustavo Ferri</p>
+                <p className="color_grey">Nome: &nbsp;</p>
+                <p>Gustavo Ferri</p>
               </div>
               <div className="data down">
-                <p>Nascimento: &nbsp;</p>
-                <p className="color_grey">18 Outubro, 1999</p>
+                <p className="color_grey">Nascimento: &nbsp;</p>
+                <p>18 Outubro, 1999</p>
               </div>
             </div>
             <div className="data_col_2">
               <div className="data up">
-                <p>Onde Moro: &nbsp;</p>
-                <p className="color_grey">Campo Grande, MS</p>
+                <p className="color_grey">Onde Moro: &nbsp;</p>
+                <p>Campo Grande, MS</p>
               </div>
               <div className="data down">
-                <p>Email: &nbsp;</p>
-                <p className="color_grey">gustavoferri13@gmail.com</p>
+                <p className="color_grey">Email: &nbsp;</p>
+                <p>gustavoferri13@gmail.com</p>
               </div>
             </div>
           </div>
