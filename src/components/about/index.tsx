@@ -1,5 +1,6 @@
 import React from "react";
 import { BiCloudDownload } from "react-icons/bi";
+import { myFoto } from "../../images";
 import PDFFile from "../../resume/cv.pdf";
 import "./style.css";
 
@@ -13,7 +14,7 @@ const About: React.FC = () => {
         <div>
           <img
             className="user_profile_image_about"
-            src="https://avatars.githubusercontent.com/u/48556195?v=4"
+            src={myFoto}
             alt="User Profile"
           />
         </div>

@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useState } from "react";
 import { BiUser, BiLibrary, BiPhone, BiBookContent } from "react-icons/bi";
+import { myFoto } from "../../images";
 import "./style.css";
 
 const LI_CONTENT = [
@@ -38,11 +39,7 @@ const StickyBar: React.FC = () => {
   return (
     <div className="sticky_bar">
       <div>
-        <img
-          className="user_profile_image"
-          src="https://avatars.githubusercontent.com/u/48556195?v=4"
-          alt="User Profile"
-        />
+        <img className="user_profile_image" src={myFoto} alt="User Profile" />
         <h1>Gustavo Ferri</h1>
         <p>Desenvolvedor web</p>
       </div>
