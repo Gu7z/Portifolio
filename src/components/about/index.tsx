@@ -1,5 +1,6 @@
 import React from "react";
 import { BiCloudDownload } from "react-icons/bi";
+import PDFFile from "../../resume/cv.pdf";
 import "./style.css";
 
 const About: React.FC = () => {
@@ -48,10 +49,14 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          <div className="btn_download_cv">
+          <a
+            className="btn_download_cv"
+            href={PDFFile}
+            download="CV gustavo ferri.pdf"
+          >
             <BiCloudDownload size={20} />
             Download CV
-          </div>
+          </a>
         </div>
       </div>
     </section>
