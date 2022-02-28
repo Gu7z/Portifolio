@@ -6,19 +6,19 @@ import "./style.css";
 const LI_CONTENT = [
   {
     icon: <BiUser />,
-    title: "About",
+    title: "Sobre",
   },
   {
     icon: <BiLibrary />,
-    title: "Resume",
+    title: "Formação",
   },
   {
     icon: <BiBookContent />,
-    title: "Works",
+    title: "Trabalhos",
   },
   {
     icon: <BiPhone />,
-    title: "Contact",
+    title: "Contato",
   },
 ];
 
@@ -44,7 +44,7 @@ const StickyBar: React.FC = () => {
           alt="User Profile"
         />
         <h1>Gustavo Ferri</h1>
-        <p>web Developer</p>
+        <p>Desenvolvedor web</p>
       </div>
       <ul>
         {LI_CONTENT.map((each) => (
