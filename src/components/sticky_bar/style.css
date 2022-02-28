@@ -6,10 +6,7 @@
   height: 480px;
   padding: 16px 32px;
   margin-top: 30px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 30px;
-  margin-right: 16px;
+  position: relative;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -94,5 +91,9 @@ ul li a {
 @media screen and (min-width: 996px) {
   .sticky_bar {
     margin-right: 32px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30px;
+    margin-right: 16px;
   }
 }
