@@ -62,6 +62,7 @@
 .sensitive_information {
   margin-top: 32px;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -72,10 +73,6 @@
 .data {
   display: flex;
   margin-bottom: 8px;
-}
-
-.data_col_1 {
-  margin-right: 56px;
 }
 
 .btn_download_cv {
