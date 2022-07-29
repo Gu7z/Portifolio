@@ -1,13 +1,15 @@
 import React from "react";
-import { StickyBar } from "./components";
+import { NavBar, StickyBar } from "./components";
 import "./App.css";
 import About from "./components/about";
+import useIsMobile from "./hooks/is_mobile";
 
 function App() {
-  // Render na stickybar so se for mobile
+  const isMobile = useIsMobile();
+
   return (
     <div className="portifolio">
-      <StickyBar />
+      {isMobile ? <NavBar /> : <StickyBar />}
       <div className="sections">
         <About />
       </div>
