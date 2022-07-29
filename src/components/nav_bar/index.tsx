@@ -37,13 +37,6 @@ const StickyBar: React.FC = () => {
 
   return (
     <nav className="nav_bar">
-      {/* <div className="user_info">
-        <img className="user_profile_image" src={myFoto} alt="User Profile" />
-        <div className="user_title">
-          <h1>Gustavo Ferri</h1>
-          <p>Desenvolvedor web</p>
-        </div>
-      </div> */}
       <ul>
         {LI_CONTENT.map((each) => (
           <li key={each.title} onClick={() => selectOptions(each.title)}>
