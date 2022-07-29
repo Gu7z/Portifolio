@@ -1,29 +1,49 @@
-.project {
+.projects {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 32px;
-}
-
-.project {
   text-decoration-line: none;
   color: inherit;
-  margin: 8px;
+  padding: 32px;
+  max-width: 286px;
+  min-height: 350px;
 }
 
 .project > h3 {
-  font-size: 32px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 16pt;
   text-transform: uppercase;
+}
+
+.project > h3:after {
+  content: "";
+  background: #ff5959;
+  border-radius: 25px;
+  display: block;
+  height: 5px;
+  margin-top: 14px;
+  margin-bottom: 24px;
+  width: 30px;
 }
 
 .project > img {
   border: 1px solid;
-  width: 200px;
-  height: 120px;
+  width: 240px;
+  height: 160px;
+  margin: 32px;
 }
 
 .project > p {
+  font-size: 11pt;
+  margin: 0;
   text-align: justify;
 }
