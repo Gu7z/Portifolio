@@ -1,7 +1,6 @@
 import React from "react";
-import { NavBar, StickyBar } from "./components";
+import { NavBar, StickyBar, About, Projects } from "./components";
 import "./App.css";
-import About from "./components/about";
 import useIsMobile from "./hooks/is_mobile";
 
 function App() {
@@ -10,8 +9,11 @@ function App() {
   return (
     <div className="portifolio">
       {isMobile ? <NavBar /> : <StickyBar />}
-      <div className="sections">
+      {/* <div className="sections">
         <About />
+      </div> */}
+      <div className="sections">
+        <Projects />
       </div>
     </div>
   );

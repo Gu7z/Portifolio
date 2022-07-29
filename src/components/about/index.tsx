@@ -6,7 +6,7 @@ import "./style.css";
 
 const About: React.FC = () => {
   return (
-    <section className="about" id="About">
+    <section className="cards" id="About">
       <div className="about_me">
         <h3>Sobre Mim</h3>
       </div>

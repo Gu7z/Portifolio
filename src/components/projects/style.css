@@ -1,0 +1,29 @@
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 32px;
+}
+
+.project {
+  text-decoration-line: none;
+  color: inherit;
+  margin: 8px;
+}
+
+.project > h3 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.project > img {
+  border: 1px solid;
+  width: 200px;
+  height: 120px;
+}
+
+.project > p {
+  text-align: justify;
+}

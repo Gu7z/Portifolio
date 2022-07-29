@@ -10,12 +10,12 @@ const LI_CONTENT = [
     title: "Sobre",
   },
   {
-    icon: <BiLibrary />,
-    title: "Formação",
-  },
-  {
     icon: <BiBookContent />,
     title: "Trabalhos",
+  },
+  {
+    icon: <BiLibrary />,
+    title: "Formação",
   },
   {
     icon: <BiPhone />,
