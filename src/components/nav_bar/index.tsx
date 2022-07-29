@@ -1,32 +1,18 @@
-import React, { useState } from "react";
-import { BiUser, BiLibrary, BiPhone, BiBookContent } from "react-icons/bi";
-import { myFoto } from "../../images";
+import React, { SetStateAction } from "react";
+import { Dispatch } from "react";
 import "./style.css";
 
-const LI_CONTENT = [
-  {
-    icon: <BiUser />,
-    title: "Sobre",
-  },
-  {
-    icon: <BiBookContent />,
-    title: "Trabalhos",
-  },
-  {
-    icon: <BiLibrary />,
-    title: "Formação",
-  },
-  {
-    icon: <BiPhone />,
-    title: "Contato",
-  },
-];
+interface Props {
+  selected: string;
+  setSelected: Dispatch<SetStateAction<string>>;
+  SECTIONS_SELECTION: { icon: JSX.Element; title: string }[];
+}
 
-const StickyBar: React.FC = () => {
-  const [selected, setSelected] = useState<string | undefined>(
-    LI_CONTENT[0].title
-  );
-
+const StickyBar: React.FC<Props> = ({
+  selected,
+  setSelected,
+  SECTIONS_SELECTION,
+}) => {
   const markerClassName = (title: string) =>
     selected === title ? "mobile_marker" : "";
 
@@ -38,7 +24,7 @@ const StickyBar: React.FC = () => {
   return (
     <nav className="nav_bar">
       <ul>
-        {LI_CONTENT.map((each) => (
+        {SECTIONS_SELECTION.map((each) => (
           <li key={each.title} onClick={() => selectOptions(each.title)}>
             <div className={markerClassName(each.title)} />
             <div className="li_icons">{each.icon}</div>

@@ -1,33 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React, { useState } from "react";
-import { BiUser, BiLibrary, BiPhone, BiBookContent } from "react-icons/bi";
+import React, { Dispatch, SetStateAction } from "react";
 import { myFoto } from "../../images";
 import "./style.css";
+interface Props {
+  selected: string;
+  setSelected: Dispatch<SetStateAction<string>>;
+  SECTIONS_SELECTION: { icon: JSX.Element; title: string }[];
+}
 
-const LI_CONTENT = [
-  {
-    icon: <BiUser />,
-    title: "Sobre",
-  },
-  {
-    icon: <BiBookContent />,
-    title: "Trabalhos",
-  },
-  {
-    icon: <BiLibrary />,
-    title: "Formação",
-  },
-  {
-    icon: <BiPhone />,
-    title: "Contato",
-  },
-];
-
-const StickyBar: React.FC = () => {
-  const [selected, setSelected] = useState<string | undefined>(
-    LI_CONTENT[0].title
-  );
-
+const StickyBar: React.FC<Props> = ({
+  selected,
+  setSelected,
+  SECTIONS_SELECTION,
+}) => {
   const markerClassName = (title: string) =>
     selected === title ? "marker" : "";
 
@@ -44,7 +29,7 @@ const StickyBar: React.FC = () => {
         <p>Desenvolvedor web</p>
       </div>
       <ul>
-        {LI_CONTENT.map((each) => (
+        {SECTIONS_SELECTION.map((each) => (
           <li key={each.title} onClick={() => selectOptions(each.title)}>
             <div className={markerClassName(each.title)} />
             <div className="li_icons">{each.icon}</div>
