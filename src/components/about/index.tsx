@@ -1,5 +1,6 @@
 import React from "react";
 import { BiCloudDownload } from "react-icons/bi";
+import { BsGithub, BsLink, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { myFoto } from "../../images";
 import PDFFile from "../../resume/cv.pdf";
 import "./style.css";
@@ -17,6 +18,26 @@ const About: React.FC = () => {
             src={myFoto}
             alt="User Profile"
           />
+
+          <div className="contact">
+            <a
+              href="https://www.linkedin.com/in/gustavo-ferri/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsLinkedin />
+            </a>
+            <a href="https://github.com/Gu7z" target="_blank" rel="noreferrer">
+              <BsGithub />
+            </a>
+            <a
+              href="https://wa.me/5567996556919?text=Ol%C3%A1%2C+te+encontrei+pelo+seu+site%21"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsWhatsapp />
+            </a>
+          </div>
         </div>
         <div className="informations_content">
           <div>

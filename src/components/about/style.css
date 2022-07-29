@@ -2,10 +2,9 @@
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 0px 6px 15px 0px rgb(74 99 231 / 10%);
-  padding: 56px;
+  padding: 32px 56px;
   scroll-margin: 32px;
   height: min-content;
-  margin-top: 30px;
 }
 
 .about_me {
@@ -35,9 +34,8 @@
 }
 
 .informations {
-  margin-top: 48px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -50,6 +48,7 @@
 
 .informations_content h2 {
   font-size: 30px;
+  margin: 16px 0;
 }
 
 .informations_content p {
@@ -96,8 +95,14 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 996px) {
-  .about {
-    margin: 30px 16px;
-  }
+.contact {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact > a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 28px;
 }

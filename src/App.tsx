@@ -25,15 +25,6 @@ const SECTIONS_SELECTION = [
       </div>
     ),
   },
-  {
-    icon: <BiPhone />,
-    title: "Contato",
-    content: (
-      <div className="cards" style={{ padding: 56 }}>
-        Em Construção
-      </div>
-    ),
-  },
 ];
 
 function App() {
